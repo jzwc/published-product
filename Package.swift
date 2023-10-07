@@ -9,7 +9,11 @@ let package = Package(
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
             name: "PublishedProductPackage",
-            targets: ["PublishedFramework"]),
+            targets: ["PublishedFramework"]
+        )
+    ],
+    dependencies: [
+        .package(url: "https://github.com/jzwc/external-package.git", branch: "main")
     ],
     targets: [
         .binaryTarget(
