@@ -9,7 +9,7 @@ let package = Package(
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
             name: "PublishedProductPackage",
-            targets: ["PublishedFramework", "DummyWrapper"]
+            targets: ["PublishedFramework", "DummyDependencyHolder"]
         )
     ],
     dependencies: [
@@ -18,11 +18,11 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "PublishedFramework",
-            url: "https://sdk.smartlook.com/ios/others/PublishedFramework4.zip",
-            checksum: "bd8866f9fc0d569d0e856eef345af7462a9bea14728171ae4286fcad000201ed"
+            url: "https://sdk.smartlook.com/ios/others/PublishedFramework5.zip",
+            checksum: "91203f615d7f4563c6f504311739a3d27eb440531335e1c9d8480b599ecac437"
         ),
         .target(
-            name: "DummyWrapper",
+            name: "DummyDependencyHolder",
             dependencies: [
                 .product(name: "ExternalPackage", package: "external-package")
             ]

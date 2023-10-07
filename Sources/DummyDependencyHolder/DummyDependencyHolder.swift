@@ -9,4 +9,6 @@ import Foundation
 
 import ExternalPackage
 
-struct DummyWrapper {}
+struct DummyDependencyHolder{
+    let ext = ExternalDependency.code
+}
