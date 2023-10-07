@@ -10,5 +10,5 @@ import Foundation
 import ExternalPackage
 
 struct DummyDependencyHolder{
-    let ext = ExternalDependency.code
+    let ext = ExternalLibrary.code
 }
