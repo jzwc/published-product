@@ -8,6 +8,7 @@
 import Foundation
 
 import ExternalPackage
+import SwiftProtobuf
 
 struct DummyDependencyHolder{
     let ext = ExternalLibrary.code
