@@ -13,18 +13,26 @@ let package = Package(
         )
     ],
     dependencies: [
-        .package(url: "https://github.com/jzwc/external-package.git", branch: "main")
+        .package(
+            url: "https://github.com/jzwc/external-package.git",
+            branch: "main"
+        ),
+        .package(
+            url: "https://github.com/apple/swift-protobuf.git",
+            exact: "1.20.2"
+        )
     ],
     targets: [
         .binaryTarget(
             name: "PublishedFramework",
-            url: "https://sdk.smartlook.com/ios/others/PublishedFramework5.zip",
-            checksum: "91203f615d7f4563c6f504311739a3d27eb440531335e1c9d8480b599ecac437"
+            url: "https://sdk.smartlook.com/ios/others/PublishedFramework6.zip",
+            checksum: "524bd556f6925b4934a94f80e811427a76ac84522e0ba8c57be4e91a107ab474"
         ),
         .target(
             name: "DummyDependencyHolder",
             dependencies: [
-                .product(name: "ExternalPackage", package: "external-package")
+                .product(name: "ExternalPackage", package: "external-package"),
+                .product(name: "SwiftProtobuf", package: "swift-protobuf")
             ]
         ),
     ]
