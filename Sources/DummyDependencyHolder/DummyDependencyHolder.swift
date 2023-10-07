@@ -12,4 +12,5 @@ import SwiftProtobuf
 
 struct DummyDependencyHolder{
     let ext = ExternalLibrary.code
+    let protobuf = ProtobufBool.self
 }
