@@ -25,8 +25,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "PublishedFramework",
-            url: "https://sdk.smartlook.com/ios/others/PublishedFramework7.zip",
-            checksum: "3ab4a350328fe507e7b22a43297299df9da826f98bbba91b242c4371d7184899"
+            url: "https://sdk.smartlook.com/ios/others/PublishedFramework8.zip",
+            checksum: "9eac4e2fe8d9fcafe2a6ab625c39154cb9b011c28b7db5984c614effb20fbd89"
         ),
         .target(
             name: "DummyDependencyHolder",
