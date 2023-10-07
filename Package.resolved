@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "external-package",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/jzwc/external-package.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "405f33e862031dc352c0a8cf9724af3f7f57a8c9"
+      }
+    }
+  ],
+  "version" : 2
+}
