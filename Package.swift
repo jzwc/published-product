@@ -12,9 +12,6 @@ let package = Package(
             targets: ["PublishedFramework"]
         )
     ],
-    dependencies: [
-        .package(url: "https://github.com/jzwc/external-package.git", branch: "main")
-    ],
     targets: [
         .binaryTarget(
             name: "PublishedFramework",
