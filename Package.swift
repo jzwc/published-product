@@ -14,8 +14,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "PublishedFramework",
-            url: "https://sdk.smartlook.com/ios/others/PublishedFramework2.zip",
-            checksum: "27d05286540dedb1d23af73f919c61d1c23721b824d52819b46b24dd69d48239"
+            url: "https://sdk.smartlook.com/ios/others/PublishedFramework3.zip",
+            checksum: "da68e8175c11c55d318f5c61ff55167c8756aad79b7171b3e5245613afa85f02"
         ),
     ]
 )
