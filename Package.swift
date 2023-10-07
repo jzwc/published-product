@@ -9,13 +9,13 @@ let package = Package(
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
             name: "PublishedProductPackage",
-            targets: ["PublishedProduct"]),
+            targets: ["PublishedFramework"]),
     ],
     targets: [
         .binaryTarget(
-            name: "PublishedProduct",
-            url: "https://sdk.smartlook.com/ios/smartlook-ios-sdk-2.2.8.241.zip",
-            checksum: "81fa500cc5ba1ca151d282cf5522e0d4a9cdb56b35e901382c38fa685af40f3e"
+            name: "PublishedFramework",
+            url: "https://sdk.smartlook.com/ios/others/PublishedFramework.zip",
+            checksum: "5454c04c4aef02e1ee4b06bc5784e44334c8b984f38eb45b8db172a132951199"
         ),
     ]
 )
